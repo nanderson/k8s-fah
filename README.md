@@ -16,13 +16,13 @@ If/when they add an option to work only on COVID-19, I will update the deploymen
 
 # Install
 ## ONLY CPU 
-```kubectl apply -f https://raw.githubusercontent.com/richstokes/k8s-fah/master/folding-cpu.yaml```  
+```kubectl apply -f https://raw.githubusercontent.com/nanderson/k8s-fah/master/folding-cpu.yaml```  
 
 ## ONLY GPU (Nvidia)
-```kubectl apply -f https://raw.githubusercontent.com/richstokes/k8s-fah/master/folding-gpu.yaml```
+```kubectl apply -f https://raw.githubusercontent.com/nanderson/k8s-fah/master/folding-gpu.yaml```
 
 ## CPU & GPU (Nvidia)
-```kubectl apply -f https://raw.githubusercontent.com/richstokes/k8s-fah/master/folding-gpu-cpu.yaml```  
+```kubectl apply -f https://raw.githubusercontent.com/nanderson/k8s-fah/master/folding-gpu-cpu.yaml```  
 
 
 
@@ -42,7 +42,7 @@ If/when they add an option to work only on COVID-19, I will update the deploymen
 
 You can also run this as a DaemonSet (runs one replica per node) with:  
 
-```kubectl apply -f https://raw.githubusercontent.com/richstokes/k8s-fah/master/folding-daemonset.yaml```    
+```kubectl apply -f https://raw.githubusercontent.com/nanderson/k8s-fah/master/folding-daemonset.yaml```    
 
 There is a `tolerations` section in this .yaml you can uncomment in order to also run FAHClient on master nodes if you wish.  
 
